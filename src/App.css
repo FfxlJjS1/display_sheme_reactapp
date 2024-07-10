@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20px;
+  pointer-events: none;
+}
+
+.button:hover {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.24), 0 6px 6px 0 rgba(0,0,0,0.19);
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+    background-color: #0aa373;
+}
+
+
+/*@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 5s;
+        height: 20px;
+    }
+}*/
+
+
+.App-header {
+    /*background-color: #282c34; #e6f6f1  #0aa373 */
+    background-color: #0aa373 !important;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
+}
+
+.App-link {
+  /*color: #61dafb;*/
+  color: #fff
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.content-container {
+    background-color: #fff;
+    position: relative;
+    min-height: calc(100vh - 126px);
+    padding: 15px;
+}
+
+.image-setting-home {
+    height: calc(100vh - 126px);
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: #0aa373;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

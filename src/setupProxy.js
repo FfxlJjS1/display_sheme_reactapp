@@ -6,7 +6,7 @@ const context = [
 
 module.exports = function (app) {
     const appProxy = createProxyMiddleware(context, {
-        target: 'https://localhost:7147',
+        target: 'http://backend.scheme:80',
         secure: false
     });
 

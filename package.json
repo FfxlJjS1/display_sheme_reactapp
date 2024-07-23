@@ -18,11 +18,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set HTTPS=true&&react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prestart": "node aspnetcore-https && node aspnetcore-react"
+    "start": "craco start",
+    "serve": "http-server ./build -p 3002",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -43,8 +43,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@craco/craco": "^7.0.0",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "prettier": "^2.7.1",
     "eslint-config-react-app": "^7.0.1",
-    "jest-editor-support": "^31.1.1"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

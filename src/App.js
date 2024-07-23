@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 
-import './App.css';
+import './App.css'
 
-import Fotter from "./Components/Footer";
+import Fotter from './Components/Footer'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from './Components/Header'
 
 function App() {
-    return (
-        <>
-            <Header />
-            
-            <Fotter className="footer"/>
-        </>
-    );
+  return (
+    <>
+      <Header />
+
+      <Fotter className="footer" />
+    </>
+  )
 }
 
-export default App;
+export default App
